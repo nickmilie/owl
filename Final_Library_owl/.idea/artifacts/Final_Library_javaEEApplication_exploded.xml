@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Final_Library:javaEEApplication exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Final_Library_javaEEApplication_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Final_Library/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="lib">
+        <element id="archive" name="Final_Library.jar">
+          <element id="module-output" name="Final_Library" />
+        </element>
+        <element id="library" level="project" name="c3p0-0.9.5.5" />
+        <element id="library" level="project" name="javax.servlet" />
+        <element id="library" level="project" name="mysql-connector-java-8.0.20" />
+      </element>
+      <element id="javaee-facet-resources" facet="Final_Library/web/Web" />
+    </root>
+  </artifact>
+</component>

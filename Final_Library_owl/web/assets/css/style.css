@@ -1,0 +1,256 @@
+/*Gotham font*/
+/*
+@font-face {
+
+    font-family: 'Gotham Rounded';
+
+    src: url('../fonts/GothaProBol.otf') format("opentype");
+
+    font-weight: bold;
+
+    font-style: normal;
+}*/
+
+/*Days font*/
+
+/*
+@font-face {
+    font-family: 'Days'; 
+    src: url(../fonts/Days.otf) format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+*/
+
+/*Neris font*/
+/*
+@font-face {
+    font-family: 'Neris-Black'; 
+    src: url(/../fonts/Neris-Black.otf) format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Neris-BlackItalic'; 
+    src: url(/../fonts/Neris-BlackItalic.otf) format("opentype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Neris-BoldItalic'; 
+    src: url(/../fonts/Neris-BoldItalic.otf) format("opentype");
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Neris-Light'; 
+    src: url(/../fonts/Neris-Light.otf) format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Neris-LightItalic'; 
+    src: url(/../fonts/Neris-LightItalic.otf) format("opentype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Neris-SemiBold'; 
+    src: url(/../fonts/Neris-SemiBold.otf) format("opentype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Neris-SemiBoldItalic'; 
+    src: url(/../fonts/Neris-SemiBoldItalic.otf) format("opentype");
+    font-style: italic;
+    font-weight: 600;
+}
+*/
+
+/* INTRO */
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /*    min-height: 745px;*/
+    background-color: #d57a53;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.welcome {
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+*/
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: 'Gotham Rounded', bold;
+
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+    /*
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: black 1px 1px 0, black -1px -1px 0,
+        black -1px 1px 0, black 1px -1px 0;
+*/
+}
+
+
+.main_form {
+    margin: 0 auto;
+    width: 450px;
+    text-align: center;
+}
+
+.search_box {
+    background: lightgray;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.search_text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #333;
+    font-size: 18px;
+    transition: .4s;
+    line-height: 20px;
+    width: 380px;
+    margin-left: 10px;
+
+    font-family: 'Rubik', sans-serif;
+}
+//Buttons
+.btn{}
+
+.btn:active, .btn:focus {
+    outline: none;
+}
+.btn::-moz-focus-inner {
+    border: 0;
+}
+
+.search_button {
+    color: lightgray;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    transform: translate(20%,0);
+    
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* LIST */
+
+.list_header {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    
+    font-family: 'Gotham Rounded', bold;
+}
+
+
+.inner {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: 'Gotham Rounded', bold;
+
+    text-align: center;
+}
+
+.list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    
+    font-family: 'Georgia';
+}
+
+/*
+p#login {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px 0, black -1px -1px 0,
+        black -1px 1px 0, black 1px -1px 0;
+}
+
+p#password {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px 0, black -1px -1px 0,
+        black -1px 1px 0, black 1px -1px 0;
+}
+
+
+#log_pass {
+    width: 250px;
+    float: left;
+}
+
+#enter_button {
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+*/
